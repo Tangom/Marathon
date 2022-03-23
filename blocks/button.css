@@ -1,0 +1,17 @@
+
+.button {
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background: #007DFF;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    padding: 12px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
