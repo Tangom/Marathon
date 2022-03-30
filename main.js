@@ -26,7 +26,6 @@ const hasInvalidInput = (inputList) => {
   })
 };
 
-
 const toggleButtonState = (inputList, buttonElement) => {
   // Если есть хотя бы один невалидный инпут
   if (hasInvalidInput(inputList)) {
@@ -38,7 +37,6 @@ const toggleButtonState = (inputList, buttonElement) => {
   }
 };
 
-
 const isValid = (formElement, inputElement) => {
   if (!inputElement.validity.valid) {
     // Если поле не проходит валидацию, покажем ошибку
@@ -48,7 +46,6 @@ const isValid = (formElement, inputElement) => {
     hideInputError(formElement, inputElement);
   }
 };
-
 
 const setEventListeners = (formElement) => {
   // Находим все поля внутри формы,
@@ -90,6 +87,5 @@ const enableValidation = () => {
     setEventListeners(formElement);
   });
 };
-
 // Вызовем функцию
 enableValidation();
