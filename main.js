@@ -6,7 +6,7 @@ const showInputError = (formElement, inputElement, errorMessage) => {
   errorElement.classList.add('form__input-error_active');
 };
 
-const hideInputError = (formElement,inputElement) => {
+const hideInputError = (formElement, inputElement) => {
 
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   inputElement.classList.remove('form__input_type_error');
@@ -49,13 +49,14 @@ const isValid = (formElement, inputElement) => {
 // Добавим фиксацию плейсхолдера если строка не пустая
 const notEmpty = (formElement, inputElement) => {
   const placeholderElement = formElement.querySelector(`#${inputElement.id}-input-placeholder`);
-  if (!inputElement.value.trim().length === 0) {
+  if (inputElement.value.trim().length === 0) {
     // Если поле не пустое добавляем .form__placeholder_is-fixed
-    placeholderElement.classList.add('form__placeholder_filled');
-  } else {
-    // Если пустое то удаляем
     placeholderElement.classList.remove('form__placeholder_filled');
   }
+   else {
+     // Если пустое то удаляем
+     placeholderElement.classList.add('form__placeholder_filled');
+   }
 };
 
 const setEventListeners = (formElement) => {
@@ -106,8 +107,6 @@ enableValidation();
 
 // Если поле не пустое то  .form__input:focus + .form__placeholder,
 // .form__placeholder_is-fixed
-
-
 
 
 // function ctrlButton() {
