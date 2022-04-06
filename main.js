@@ -46,6 +46,17 @@ const isValid = (formElement, inputElement) => {
     hideInputError(formElement, inputElement);
   }
 };
+// Добавим фиксацию плейсхолдера если строка не пустая
+const notEmpty = (formElement, inputElement) => {
+  const placeholderElement = formElement.querySelector(`#${inputElement.id}-input-placeholder`);
+  if (!inputElement.value.trim().length === 0) {
+    // Если поле не пустое добавляем .form__placeholder_is-fixed
+    placeholderElement.classList.add('form__placeholder_filled');
+  } else {
+    // Если пустое то удаляем
+    placeholderElement.classList.remove('form__placeholder_filled');
+  }
+};
 
 const setEventListeners = (formElement) => {
   // Находим все поля внутри формы,
@@ -64,7 +75,10 @@ const setEventListeners = (formElement) => {
     inputElement.addEventListener('input', () => {
       // Внутри колбэка вызовем isValid,
       // передав ей форму и проверяемый элемент
-      isValid(formElement, inputElement)
+      isValid(formElement, inputElement);
+      // здесь добавим уход надписи вверх !!!!
+      notEmpty(formElement, inputElement)
+      //Работа кнопки
       toggleButtonState(inputList, buttonElement);
     });
   });
@@ -89,3 +103,19 @@ const enableValidation = () => {
 };
 // Вызовем функцию
 enableValidation();
+
+// Если поле не пустое то  .form__input:focus + .form__placeholder,
+// .form__placeholder_is-fixed
+
+
+
+
+// function ctrlButton() {
+//   btn.disabled = this.value.trim().length === 0;
+// }
+//
+// text1.addEventListener('input', ctrlButton, false);
+// ctrlButton.call(text1);
+//
+// <input type="text" id="text1">
+//   <button id="btn">Button</button>

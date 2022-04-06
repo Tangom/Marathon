@@ -46,8 +46,13 @@
   border-bottom-color: #007DFF;
 }
 
-.form__input:focus + .form__placeholder,
-.form__placeholder_is-fixed {
+.form__input:focus + .form__placeholder{
+  font-size: 12px;
+  line-height: 14px;
+  transform: translateY(-160%) scale(1);
+}
+
+.form__placeholder_filled{
   font-size: 12px;
   line-height: 14px;
   transform: translateY(-160%) scale(1);
