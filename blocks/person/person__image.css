@@ -4,6 +4,13 @@
   border-radius: 50%;
   object-fit: cover;
   margin: auto;
+  transition: 1s;
+}
+
+.person__image:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+  box-shadow:0 0 80px rgb(246, 222, 7);
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -20,8 +27,3 @@
   }
 }
 
-/* @media screen and (min-width: 320px) and (max-width: 767px) {
-  .person__image {
-
-  }
-} */

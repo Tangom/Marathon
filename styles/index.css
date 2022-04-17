@@ -7,10 +7,10 @@
 @import url(../blocks/list.css);
 @import url(../blocks/dj.css);
 @import url(../blocks/button.css);
-@import url(../blocks/form/form.css);
 @import url(../blocks/header/header__title.css);
 @import url(../blocks/person/person.css);
 @import url(../blocks/person/person__image.css);
 @import url(../blocks/person/person__image_special.css);
 @import url(../blocks/person/person__name.css);
 @import url(../blocks/person/person__town.css);
+@import url(../blocks/popup/popup.css);
