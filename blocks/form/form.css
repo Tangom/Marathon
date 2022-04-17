@@ -96,7 +96,6 @@
   margin: 0 0 30px;
 }
 
-
 .form__input-error_active {
   opacity: 1;
 }
@@ -110,39 +109,39 @@
 }
 
 
-.valid:before {
-  bottom: 10px;
-  right: 16px;
-  visibility: visible;
-  background-color: #4CAF50;
-  transform-origin: inherit;
-  transform: rotate(40deg);
-  transition: bottom 0.4s ease, transform 0.4s ease 0.3s;
-}
+/*.valid:before {*/
+/*  bottom: 10px;*/
+/*  right: 16px;*/
+/*  visibility: visible;*/
+/*  background-color: #4CAF50;*/
+/*  transform-origin: inherit;*/
+/*  transform: rotate(40deg);*/
+/*  transition: bottom 0.4s ease, transform 0.4s ease 0.3s;*/
+/*}*/
 
-.valid:after {
-  bottom: 10px;
-  height: 15px;
-  visibility: visible;
-  background-color: #4CAF50;
-  transform-origin: inherit;
-  transform: rotate(-45deg);
-  transition: bottom 0.4s ease, visibility 0.4s ease 0.3s, transform 0.4s ease 0.3s;
-}
+/*.valid:after {*/
+/*  bottom: 10px;*/
+/*  height: 15px;*/
+/*  visibility: visible;*/
+/*  background-color: #4CAF50;*/
+/*  transform-origin: inherit;*/
+/*  transform: rotate(-45deg);*/
+/*  transition: bottom 0.4s ease, visibility 0.4s ease 0.3s, transform 0.4s ease 0.3s;*/
+/*}*/
 
-.invalid:before {
-  bottom: 10px;
-  visibility: visible;
-  background-color: #ff5252;
-  transform: rotate(40deg);
-  transition: bottom 0.4s ease, transform 0.4s ease 0.3s;
-}
+/*.invalid:before {*/
+/*  bottom: 10px;*/
+/*  visibility: visible;*/
+/*  background-color: #ff5252;*/
+/*  transform: rotate(40deg);*/
+/*  transition: bottom 0.4s ease, transform 0.4s ease 0.3s;*/
+/*}*/
 
-.invalid:after {
-  height: 26px;
-  bottom: 10px;
-  visibility: visible;
-  background-color: #ff5252;
-  transform: rotate(-45deg);
-  transition: bottom 0.4s ease, visibility 0.4s ease 0.3s, transform 0.4s ease 0.3s;
-}
+/*.invalid:after {*/
+/*  height: 26px;*/
+/*  bottom: 10px;*/
+/*  visibility: visible;*/
+/*  background-color: #ff5252;*/
+/*  transform: rotate(-45deg);*/
+/*  transition: bottom 0.4s ease, visibility 0.4s ease 0.3s, transform 0.4s ease 0.3s;*/
+/*}*/
