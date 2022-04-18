@@ -1,33 +1,31 @@
-
-const popupPhoto = document.querySelector('.popup_photo'); 
-const popupCloseImage = popupPhoto.querySelector('.popup__close_image'); 
-const popupText = popupPhoto.querySelector('.popup__text'); 
+const photo = document.querySelector('.person__image');
+const popupPhoto = document.querySelector('.popup_photo');
+const popupCloseImage = popupPhoto.querySelector('.popup__close_image');
+const popupText = popupPhoto.querySelector('.popup__text');
 const popupImage = popupPhoto.querySelector('.popup__image');
 
 
-
-
 const person = [{
-    name: 'Дмитрий Баклашов',
-    link: './images/Дмитрий Баклашов.jpg'
-  }, 
-  { 
+  name: 'Дмитрий Баклашов',
+  link: './images/Дмитрий Баклашов.jpg'
+},
+  {
     name: 'Екатерина Виноградова',
     link: './images/Екатерина Виноградова.jpg'
-  }, 
-  { 
+  },
+  {
     name: 'Алина Шатковская',
     link: './images/Алина Шатковская.jpg'
-  }, 
-  { 
+  },
+  {
     name: 'Daniel Tuero',
     link: './images/Daniel Tuero.jpg'
-  }, 
-  { 
+  },
+  {
     name: 'Hernán Brus',
     link: './images/Hernán Brusa.jpg'
-  }, 
-  { 
+  },
+  {
     name: 'Виктор Шевченко',
     link: './images/Виктор Шевченко.jpg'
   },
@@ -68,3 +66,13 @@ function closePopupOverlay(evt) {
     closePopup(document.querySelector('.popup_opened'));
   }
 }
+
+function openPopupImage(evt) {
+  openPopup(popupPhoto);
+  popupImage.src = evt.target.src;
+  popupImage.alt = evt.target.alt;
+  popupText.textContent = evt.target.alt;
+}
+
+ photo.addEventListener('click', (evt) => openPopupImage(evt))
+popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
