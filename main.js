@@ -1,39 +1,70 @@
-const photo = document.querySelector('.person__image');
 const popupPhoto = document.querySelector('.popup_photo');
 const popupCloseImage = popupPhoto.querySelector('.popup__close_image');
 const popupText = popupPhoto.querySelector('.popup__text');
 const popupImage = popupPhoto.querySelector('.popup__image');
+const listDJ = document.querySelector('.list_dj');
 
-
-const person = [{
+const personListDJ = [{
   name: 'Дмитрий Баклашов',
-  link: './images/Дмитрий Баклашов.jpg'
+  link: './images/Дмитрий Баклашов.jpg',
+  town: 'Воронеж'
 },
   {
     name: 'Екатерина Виноградова',
-    link: './images/Екатерина Виноградова.jpg'
+    link: './images/Екатерина Виноградова.jpg',
+    town: 'Москва'
   },
   {
     name: 'Алина Шатковская',
-    link: './images/Алина Шатковская.jpg'
+    link: './images/Алина Шатковская.jpg',
+    town: 'Москва'
   },
   {
     name: 'Daniel Tuero',
-    link: './images/Daniel Tuero.jpg'
+    link: './images/Daniel Tuero.jpg',
+    town: 'Buenos Aires/Москва'
   },
   {
     name: 'Hernán Brus',
-    link: './images/Hernán Brusa.jpg'
+    link: './images/Hernán Brusa.jpg',
+    town: 'Buenos-Aires/Санкт-Петербург'
   },
   {
     name: 'Виктор Шевченко',
-    link: './images/Виктор Шевченко.jpg'
+    link: './images/Виктор Шевченко.jpg',
+    town: 'Вологда'
   },
   {
     name: 'Ирина Кострома',
-    link: './images/Ира Кострома.jpg'
+    link: './images/Ира Кострома.jpg',
+    town: 'Псков'
   }
-]
+  ]
+
+function createElement(link, name, town) {
+  const template = document.querySelector('.template').content;
+  const person = template.cloneNode(true);
+  const image = person.querySelector('.person__image')
+  const  pName= person.querySelector('.person__name')
+  const  pTown= person.querySelector('.person__town')
+
+  image.src = link;
+  image.alt = name
+  pName.textContent = name;
+  pTown.textContent = town;
+
+  image.addEventListener('click', openPopupImage);
+  return person;
+}
+
+function addPersons() {
+  personListDJ.forEach(element => {
+    listDJ.append(createElement(element.link, element.name, element.town));
+  })
+}
+
+
+
 
 function openPopup(mod) {
   mod.classList.add('popup_opened')
@@ -74,5 +105,12 @@ function openPopupImage(evt) {
   popupText.textContent = evt.target.alt;
 }
 
- photo.addEventListener('click', (evt) => openPopupImage(evt))
+const photoList = Array.from(document.querySelectorAll('.person__image'));
+
+photoList.forEach((photo) => {
+  photo.addEventListener('click', (evt) => openPopupImage(evt));
+});
+
 popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
+
+addPersons();
