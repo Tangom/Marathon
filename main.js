@@ -1,45 +1,14 @@
+import {personListDJ, personListBY} from './data.js';
+
+
 const popupPhoto = document.querySelector('.popup_photo');
 const popupCloseImage = popupPhoto.querySelector('.popup__close_image');
 const popupText = popupPhoto.querySelector('.popup__text');
 const popupImage = popupPhoto.querySelector('.popup__image');
 const listDJ = document.querySelector('.list_dj');
+const listBY = document.querySelector('.list_by');
 
-const personListDJ = [{
-  name: 'Дмитрий Баклашов',
-  link: './images/Дмитрий Баклашов.jpg',
-  town: 'Воронеж'
-},
-  {
-    name: 'Екатерина Виноградова',
-    link: './images/Екатерина Виноградова.jpg',
-    town: 'Москва'
-  },
-  {
-    name: 'Алина Шатковская',
-    link: './images/Алина Шатковская.jpg',
-    town: 'Москва'
-  },
-  {
-    name: 'Daniel Tuero',
-    link: './images/Daniel Tuero.jpg',
-    town: 'Buenos Aires/Москва'
-  },
-  {
-    name: 'Hernán Brus',
-    link: './images/Hernán Brusa.jpg',
-    town: 'Buenos-Aires/Санкт-Петербург'
-  },
-  {
-    name: 'Виктор Шевченко',
-    link: './images/Виктор Шевченко.jpg',
-    town: 'Вологда'
-  },
-  {
-    name: 'Ирина Кострома',
-    link: './images/Ира Кострома.jpg',
-    town: 'Псков'
-  }
-  ]
+
 
 function createElement(link, name, town) {
   const template = document.querySelector('.template').content;
@@ -57,14 +26,17 @@ function createElement(link, name, town) {
   return person;
 }
 
-function addPersons() {
+function addPersonsDJ() {
   personListDJ.forEach(element => {
     listDJ.append(createElement(element.link, element.name, element.town));
   })
 }
 
-
-
+function addPersonsBY() {
+  personListBY.forEach(element => {
+    listBY.append(createElement(element.link, element.name, element.town));
+  })
+}
 
 function openPopup(mod) {
   mod.classList.add('popup_opened')
@@ -113,4 +85,5 @@ photoList.forEach((photo) => {
 
 popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
 
-addPersons();
+addPersonsDJ();
+addPersonsBY();
