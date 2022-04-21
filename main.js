@@ -1,4 +1,4 @@
-import {personListDJ, personListBY} from './data.js';
+import {personListDJ, personListBY, personListMO} from './data.js';
 
 
 const popupPhoto = document.querySelector('.popup_photo');
@@ -7,7 +7,7 @@ const popupText = popupPhoto.querySelector('.popup__text');
 const popupImage = popupPhoto.querySelector('.popup__image');
 const listDJ = document.querySelector('.list_dj');
 const listBY = document.querySelector('.list_by');
-
+const listMO = document.querySelector('.list_mo');
 
 
 function createElement(link, name, town) {
@@ -35,6 +35,12 @@ function addPersonsDJ() {
 function addPersonsBY() {
   personListBY.forEach(element => {
     listBY.append(createElement(element.link, element.name, element.town));
+  })
+}
+
+function addPersonsMO() {
+  personListMO.forEach(element => {
+    listMO.append(createElement(element.link, element.name));
   })
 }
 
@@ -87,3 +93,4 @@ popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
 
 addPersonsDJ();
 addPersonsBY();
+addPersonsMO();
