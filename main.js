@@ -26,23 +26,6 @@ function createElement(link, name, town) {
   return person;
 }
 
-function addPersonsDJ() {
-  personListDJ.forEach(element => {
-    listDJ.append(createElement(element.link, element.name, element.town));
-  })
-}
-
-function addPersonsBY() {
-  personListBY.forEach(element => {
-    listBY.append(createElement(element.link, element.name, element.town));
-  })
-}
-
-function addPersonsMO() {
-  personListMO.forEach(element => {
-    listMO.append(createElement(element.link, element.name));
-  })
-}
 
 function openPopup(mod) {
   mod.classList.add('popup_opened')
@@ -83,14 +66,26 @@ function openPopupImage(evt) {
   popupText.textContent = evt.target.alt;
 }
 
-const photoList = Array.from(document.querySelectorAll('.person__image'));
-
-photoList.forEach((photo) => {
-  photo.addEventListener('click', (evt) => openPopupImage(evt));
-});
+// const photoList = Array.from(document.querySelectorAll('.person__image'));
+//
+// photoList.forEach((photo) => {
+//   photo.addEventListener('click', (evt) => openPopupImage(evt));
+// });
 
 popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
 
-addPersonsDJ();
-addPersonsBY();
-addPersonsMO();
+function createPersons1(personList, list) {
+  personList.forEach(element => {
+    list.append(createElement(element.link, element.name, element.town));
+  })
+}
+
+function createPersons2(personList, list) {
+  personList.forEach(element => {
+    list.append(createElement(element.link, element.name));
+  })
+}
+
+createPersons1(personListDJ, listDJ);
+createPersons1(personListBY, listBY);
+createPersons2(personListMO, listMO);
