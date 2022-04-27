@@ -74,18 +74,12 @@ function openPopupImage(evt) {
 
 popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
 
-function createPersons1(personList, list) {
+function createPersons(personList, list) {
   personList.forEach(element => {
     list.append(createElement(element.link, element.name, element.town));
   })
 }
 
-function createPersons2(personList, list) {
-  personList.forEach(element => {
-    list.append(createElement(element.link, element.name));
-  })
-}
-
-createPersons1(personListDJ, listDJ);
-createPersons1(personListBY, listBY);
-createPersons2(personListMO, listMO);
+createPersons(personListDJ, listDJ);
+createPersons(personListBY, listBY);
+createPersons(personListMO, listMO);
