@@ -5,7 +5,7 @@ const popupPhoto = document.querySelector('.popup_photo');
 const popupCloseImage = popupPhoto.querySelector('.popup__close_image');
 const popupText = popupPhoto.querySelector('.popup__text');
 const popupImage = popupPhoto.querySelector('.popup__image');
-const listDJ = document.querySelector('.list_dj');
+// const listDJ = document.querySelector('.list_dj');
 const listBY = document.querySelector('.list_by');
 const listMO = document.querySelector('.list_mo');
 
@@ -80,6 +80,46 @@ function createPersons(personList, list) {
   })
 }
 
-createPersons(personListDJ, listDJ);
+// createPersons(personListDJ, listDJ);
 createPersons(personListBY, listBY);
 createPersons(personListMO, listMO);
+
+
+
+class Person {
+  constructor(data, personSelector) { // конструктор получает объект
+    this._name = data.name;
+    this._link = data.link;
+    this._town = data.town;
+    this._personSelector = personSelector;
+  }
+
+_getTemplate() {
+const personElement = document.querySelector(this._personSelector).
+  content.querySelector('.person').cloneNode(true);
+return personElement;
+}
+
+generatePerson(){
+  this._element = this._getTemplate();
+  this._element.querySelector('.person__image').src = this._link;
+  this._element.querySelector('.person__name').textContent = this._name;
+  this._element.querySelector('.person__town').textContent = this._town;
+
+  return this._element;
+}
+}
+
+personListDJ.forEach((item)=>{
+// Создадим экземпляр
+  const person = new Person(item, '.template_dj');
+  // Создаём личность и возвращаем наружу
+  const personElement = person.generatePerson();
+  // Добавляем в DOM
+  document.body.append(personElement);
+});
+
+
+
+
+
