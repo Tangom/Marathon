@@ -100,8 +100,16 @@ const personElement = document.querySelector(this._personSelector).
 return personElement;
 }
 
+_setEventListeners(){
+this._element.querySelector('.person__image').addEventListener('click',() => {this._imageClick();});
+}
+
+  _imageClick(){
+    this._element.querySelector('.person__image').classList.add('.popup_opened')
+  }
 generatePerson(){
   this._element = this._getTemplate();
+  this._setEventListeners();
   this._element.querySelector('.person__image').src = this._link;
   this._element.querySelector('.person__name').textContent = this._name;
   this._element.querySelector('.person__town').textContent = this._town;
@@ -120,6 +128,17 @@ personListDJ.forEach((item)=>{
 });
 
 
-
+class djPerson extends Person {
+  constructor(data, personSelector) {
+    super(name,link ); // конструктор получает объект
+    this._name = data.name;
+    this._link = data.link;
+    this._town = data.town;
+    this._personSelector = personSelector;
+  }
+  generateCard() {
+    // код generateCard
+  }
+}
 
 
