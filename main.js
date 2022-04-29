@@ -14,8 +14,8 @@ function createElement(link, name, town) {
   const template = document.querySelector('.template').content;
   const person = template.cloneNode(true);
   const image = person.querySelector('.person__image')
-  const  pName= person.querySelector('.person__name')
-  const  pTown= person.querySelector('.person__town')
+  const pName = person.querySelector('.person__name')
+  const pTown = person.querySelector('.person__town')
 
   image.src = link;
   image.alt = name
@@ -85,60 +85,75 @@ createPersons(personListBY, listBY);
 createPersons(personListMO, listMO);
 
 
-
 class Person {
-  constructor(data, personSelector) { // конструктор получает объект
-    this._name = data.name;
-    this._link = data.link;
-    this._town = data.town;
+  constructor(personSelector) { // конструктор получает объект
+
     this._personSelector = personSelector;
   }
 
-_getTemplate() {
-const personElement = document.querySelector(this._personSelector).
-  content.querySelector('.person').cloneNode(true);
-return personElement;
-}
+  _getTemplate() {
+    const personElement = document.querySelector(this._personSelector).content.querySelector('.person').cloneNode(true);
+    return personElement;
+  }
 
-_setEventListeners(){
-this._element.querySelector('.person__image').addEventListener('click',() => {this._imageClick();});
-}
+  _setEventListeners() {
+    this._element.querySelector('.person__image').addEventListener('click', () => {
+      this._imageClick();
+    });
+  }
 
-  _imageClick(){
+  _imageClick() {
     this._element.querySelector('.person__image').classList.add('.popup_opened')
   }
-generatePerson(){
-  this._element = this._getTemplate();
-  this._setEventListeners();
-  this._element.querySelector('.person__image').src = this._link;
-  this._element.querySelector('.person__name').textContent = this._name;
-  this._element.querySelector('.person__town').textContent = this._town;
 
-  return this._element;
-}
+  generatePerson() {
+    this._element = this._getTemplate();
+    this._setEventListeners();
+    this._element.querySelector('.person__image').src = this._link;
+    this._element.querySelector('.person__name').textContent = this._name;
+
+    return this._element;
+  }
 }
 
-personListDJ.forEach((item)=>{
+
+class djPerson extends Person {
+  constructor(data, personSelector) {
+    super(personSelector); // конструктор получает объект
+    this._name = data.name;
+    this._link = data.link;
+    this._town = data.town;
+  }
+
+  generatePerson() {
+    this._element = super._getTemplate();
+    super._setEventListeners();
+    this._element.querySelector('.person__town').textContent = this._town;
+
+    return this._element;
+  }
+}
+
+class MOPerson extends Person {
+  constructor(data, personSelector) {
+    super(personSelector); // конструктор получает объект
+    this._name = data.name;
+    this._link = data.link;
+  }
+
+  generatePerson() {
+    this._element = super._getTemplate();
+    super._setEventListeners();
+
+    return this._element;
+  }
+}
+
+personListDJ.forEach((item) => {
 // Создадим экземпляр
-  const person = new Person(item, '.template_dj');
+  const person = new djPerson(item, '.template_dj');
   // Создаём личность и возвращаем наружу
   const personElement = person.generatePerson();
   // Добавляем в DOM
   document.body.append(personElement);
 });
-
-
-class djPerson extends Person {
-  constructor(data, personSelector) {
-    super(name,link ); // конструктор получает объект
-    this._name = data.name;
-    this._link = data.link;
-    this._town = data.town;
-    this._personSelector = personSelector;
-  }
-  generateCard() {
-    // код generateCard
-  }
-}
-
-
