@@ -5,7 +5,7 @@ const popupPhoto = document.querySelector('.popup_photo');
 const popupCloseImage = popupPhoto.querySelector('.popup__close_image');
 const popupText = popupPhoto.querySelector('.popup__text');
 const popupImage = popupPhoto.querySelector('.popup__image');
-// const listDJ = document.querySelector('.list_dj');
+const listDJ = document.querySelector('.list_dj');
 const listBY = document.querySelector('.list_by');
 const listMO = document.querySelector('.list_mo');
 
@@ -82,7 +82,7 @@ function createPersons(personList, list) {
 
 // createPersons(personListDJ, listDJ);
 createPersons(personListBY, listBY);
-createPersons(personListMO, listMO);
+// createPersons(personListMO, listMO);
 
 
 class Person {
@@ -95,15 +95,7 @@ class Person {
     return document.querySelector(this._personSelector).content.querySelector('.person').cloneNode(true);
   }
 
-  // _imageClick() {
-  //    this._element.querySelector('.person__image').classList.add('popup_opened')
-  // }
 
-  _setEventListeners() {
-    this._element.querySelector('.person__image').addEventListener('click', (evt) => {
-      openPopupImage(evt)
-    });
-  }
 
   generatePerson() {
     this._element = this._getTemplate();
@@ -113,6 +105,9 @@ class Person {
     this._element.querySelector('.person__town').textContent = this._town;
 
     return this._element;
+  }
+  _setEventListeners() {
+    this._element.querySelector('.person__image').addEventListener('click', openPopupImage);
   }
 }
 
@@ -146,6 +141,8 @@ class moPerson extends Person {
   generatePerson() {
     this._element = super._getTemplate();
     super._setEventListeners();
+    this._element.querySelector('.person__image').src = this._link;
+    this._element.querySelector('.person__name').textContent = this._name;
 
     return this._element;
   }
@@ -157,5 +154,14 @@ personListDJ.forEach((item) => {
   // Создаём личность и возвращаем наружу
   const personElement = person.generatePerson();
   // Добавляем в DOM
-  document.body.append(personElement);
+  listDJ.append(personElement);
+});
+
+personListMO.forEach((item) => {
+// Создадим экземпляр
+  const person = new moPerson(item, '.template_mo');
+  // Создаём личность и возвращаем наружу
+  const personElement = person.generatePerson();
+  // Добавляем в DOM
+  listMO.append(personElement);
 });
