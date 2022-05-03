@@ -1,4 +1,4 @@
-import {personListDJ, personListBY, personListMO} from './data.js';
+import {personListBY, personListDJ, personListMO} from './data.js';
 
 
 const popupPhoto = document.querySelector('.popup_photo');
@@ -92,18 +92,17 @@ class Person {
   }
 
   _getTemplate() {
-    const personElement = document.querySelector(this._personSelector).content.querySelector('.person').cloneNode(true);
-    return personElement;
+    return document.querySelector(this._personSelector).content.querySelector('.person').cloneNode(true);
   }
+
+  // _imageClick() {
+  //    this._element.querySelector('.person__image').classList.add('popup_opened')
+  // }
 
   _setEventListeners() {
-    this._element.querySelector('.person__image').addEventListener('click', () => {
-      this._imageClick();
+    this._element.querySelector('.person__image').addEventListener('click', (evt) => {
+      openPopupImage(evt)
     });
-  }
-
-  _imageClick() {
-    this._element.querySelector('.person__image').classList.add('.popup_opened')
   }
 
   generatePerson() {
@@ -111,11 +110,11 @@ class Person {
     this._setEventListeners();
     this._element.querySelector('.person__image').src = this._link;
     this._element.querySelector('.person__name').textContent = this._name;
+    this._element.querySelector('.person__town').textContent = this._town;
 
     return this._element;
   }
 }
-
 
 class djPerson extends Person {
   constructor(data, personSelector) {
@@ -128,13 +127,16 @@ class djPerson extends Person {
   generatePerson() {
     this._element = super._getTemplate();
     super._setEventListeners();
+    this._element.querySelector('.person__image').src = this._link;
+    this._element.querySelector('.person__name').textContent = this._name;
     this._element.querySelector('.person__town').textContent = this._town;
+
 
     return this._element;
   }
 }
 
-class MOPerson extends Person {
+class moPerson extends Person {
   constructor(data, personSelector) {
     super(personSelector); // конструктор получает объект
     this._name = data.name;
