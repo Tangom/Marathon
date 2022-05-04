@@ -1,6 +1,5 @@
 import {personListBY, personListDJ, personListMO} from './data.js';
 
-
 const popupPhoto = document.querySelector('.popup_photo');
 const popupCloseImage = popupPhoto.querySelector('.popup__close_image');
 const popupText = popupPhoto.querySelector('.popup__text');
@@ -9,23 +8,21 @@ const listDJ = document.querySelector('.list_dj');
 const listBY = document.querySelector('.list_by');
 const listMO = document.querySelector('.list_mo');
 
-
-function createElement(link, name, town) {
-  const template = document.querySelector('.template').content;
-  const person = template.cloneNode(true);
-  const image = person.querySelector('.person__image')
-  const pName = person.querySelector('.person__name')
-  const pTown = person.querySelector('.person__town')
-
-  image.src = link;
-  image.alt = name
-  pName.textContent = name;
-  pTown.textContent = town;
-
-  image.addEventListener('click', openPopupImage);
-  return person;
-}
-
+// function createElement(link, name, town) {
+//   const template = document.querySelector('.template').content;
+//   const person = template.cloneNode(true);
+//   const image = person.querySelector('.person__image')
+//   const pName = person.querySelector('.person__name')
+//   const pTown = person.querySelector('.person__town')
+//
+//   image.src = link;
+//   image.alt = name
+//   pName.textContent = name;
+//   pTown.textContent = town;
+//
+//   image.addEventListener('click', openPopupImage);
+//   return person;
+// }
 
 function openPopup(mod) {
   mod.classList.add('popup_opened')
@@ -66,102 +63,77 @@ function openPopupImage(evt) {
   popupText.textContent = evt.target.alt;
 }
 
+popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
 // const photoList = Array.from(document.querySelectorAll('.person__image'));
 //
 // photoList.forEach((photo) => {
 //   photo.addEventListener('click', (evt) => openPopupImage(evt));
 // });
 
-popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
-
-function createPersons(personList, list) {
-  personList.forEach(element => {
-    list.append(createElement(element.link, element.name, element.town));
-  })
-}
+// function createPersons(personList, list) {
+//   personList.forEach(element => {
+//     list.append(createElement(element.link, element.name, element.town));
+//   })
+// }
 
 // createPersons(personListDJ, listDJ);
-createPersons(personListBY, listBY);
+// createPersons(personListBY, listBY);
+
 // createPersons(personListMO, listMO);
 
-
 class Person {
-  constructor(personSelector) { // конструктор получает объект
-
-    this._personSelector = personSelector;
+  constructor(data) { // конструктор получает объект
+    this._name = data.name;
+    this._link = data.link;
+    // this._personSelector = personSelector;
   }
 
   _getTemplate() {
-    return document.querySelector(this._personSelector).content.querySelector('.person').cloneNode(true);
+    // return document.querySelector(this._personSelector).content.querySelector('.person').cloneNode(true);
+    return document.querySelector('.template').content.cloneNode(true);
   }
-
-
 
   generatePerson() {
     this._element = this._getTemplate();
     this._setEventListeners();
-    this._element.querySelector('.person__image').src = this._link;
+    const image = this._element.querySelector('.person__image');
+    image.src = this._link;
+    image.alt = this._name;
     this._element.querySelector('.person__name').textContent = this._name;
     this._element.querySelector('.person__town').textContent = this._town;
 
     return this._element;
   }
+
   _setEventListeners() {
     this._element.querySelector('.person__image').addEventListener('click', openPopupImage);
   }
 }
 
-class djPerson extends Person {
-  constructor(data, personSelector) {
-    super(personSelector); // конструктор получает объект
-    this._name = data.name;
-    this._link = data.link;
+class extendedPerson extends Person {
+  constructor(data) {
+    super(data);
+    // super(personSelector); // конструктор получает объект
     this._town = data.town;
   }
 
   generatePerson() {
-    this._element = super._getTemplate();
-    super._setEventListeners();
-    this._element.querySelector('.person__image').src = this._link;
-    this._element.querySelector('.person__name').textContent = this._name;
-    this._element.querySelector('.person__town').textContent = this._town;
-
-
+    super.generatePerson();
     return this._element;
   }
 }
 
-class moPerson extends Person {
-  constructor(data, personSelector) {
-    super(personSelector); // конструктор получает объект
-    this._name = data.name;
-    this._link = data.link;
-  }
-
-  generatePerson() {
-    this._element = super._getTemplate();
-    super._setEventListeners();
-    this._element.querySelector('.person__image').src = this._link;
-    this._element.querySelector('.person__name').textContent = this._name;
-
-    return this._element;
-  }
+function createPersons(personList, selectClass, list) {
+  personList.forEach((item) => {
+// Создадим экземпляр
+    const person = new selectClass(item);
+    // Создаём личность и возвращаем наружу
+    const personElement = person.generatePerson();
+    // Добавляем в DOM
+    list.append(personElement);
+  });
 }
 
-personListDJ.forEach((item) => {
-// Создадим экземпляр
-  const person = new djPerson(item, '.template_dj');
-  // Создаём личность и возвращаем наружу
-  const personElement = person.generatePerson();
-  // Добавляем в DOM
-  listDJ.append(personElement);
-});
-
-personListMO.forEach((item) => {
-// Создадим экземпляр
-  const person = new moPerson(item, '.template_mo');
-  // Создаём личность и возвращаем наружу
-  const personElement = person.generatePerson();
-  // Добавляем в DOM
-  listMO.append(personElement);
-});
+createPersons(personListDJ, extendedPerson, listDJ);
+createPersons(personListMO, Person, listMO);
+createPersons(personListBY, Person, listBY);
