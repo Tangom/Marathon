@@ -78,7 +78,6 @@ popupCloseImage.addEventListener('click', () => closePopup(popupPhoto));
 
 // createPersons(personListDJ, listDJ);
 // createPersons(personListBY, listBY);
-
 // createPersons(personListMO, listMO);
 
 class Person {
