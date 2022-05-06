@@ -122,10 +122,10 @@ class extendedPerson extends Person {
   }
 }
 
-function createPersons(personList, selectClass, list) {
+function createPersons(personList, list) {
   personList.forEach((item) => {
 // Создадим экземпляр
-    const person = new selectClass(item);
+    const person = item.town? new extendedPerson(item):new Person(item);
     // Создаём личность и возвращаем наружу
     const personElement = person.generatePerson();
     // Добавляем в DOM
@@ -133,6 +133,6 @@ function createPersons(personList, selectClass, list) {
   });
 }
 
-createPersons(personListDJ, extendedPerson, listDJ);
-createPersons(personListMO, Person, listMO);
-createPersons(personListBY, Person, listBY);
+createPersons(personListDJ, listDJ);
+createPersons(personListMO, listMO);
+createPersons(personListBY, listBY);
