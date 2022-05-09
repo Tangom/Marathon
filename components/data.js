@@ -1,3 +1,8 @@
+const listDJ = document.querySelector('.list_dj');
+const listBY = document.querySelector('.list_by');
+const listMO = document.querySelector('.list_mo');
+const listSP = document.querySelector('.list_sp');
+
 const personListDJ = [{
   name: 'Дмитрий Баклашов',
   link: './images/Дмитрий Баклашов.jpg',
@@ -64,7 +69,7 @@ const personListBY = [{
     name: 'Ирина Ястребкова',
     link: './images/Ирина Ястребкова.jpg',
     town: 'Минск'
-  },
+  }
 ]
 
 const personListMO = [{
@@ -222,201 +227,241 @@ const personListMO = [{
 ]
 
 const personListSP = [{
-    name: '',
-    link: './images/.jpg',
+  name: 'Инна Апрельская',
+  link: './images/Инна Апрельская.jpg',
+},
+  {
+    name: 'Татьяна Архипова',
+    link: './images/Архипова Татьяна.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Дарья Бажанова',
+    link: './images/Дарья Бажанова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Мария Белокурова',
+    link: './images/Мария Белокурова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Елена Берестецкая',
+    link: './images/Елена Берестецкая.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Алексей Биорк',
+    link: './images/Алексей Биорк.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Игорь Близнец',
+    link: './images/Игорь Близнец.png',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Владимир Брагин',
+    link: './images/Владимир Брагин.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Мария Брусса',
+    link: './images/Мария Брусса.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Константин Волошенко',
+    link: './images/Константин Волошенко.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Олег Голубев',
+    link: './images/Олег Голубев.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Артём Довбуш',
+    link: './images/Артём Довбуш.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Игорь Дорофеев',
+    link: './images/Некто.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Наталья Жемеркина',
+    link: './images/Наталья Жемеркина.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Александр Захаров',
+    link: './images/Александр Захаров.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Лариса Захарова',
+    link: './images/Лариса Захарова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Светлана Зинченко',
+    link: './images/Светлана Зинченко.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Игорь Иванов',
+    link: './images/Игорь Иванов.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Александра Иванова',
+    link: './images/Александра Иванова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Елена Кадырова',
+    link: './images/елена кадырова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Дмитрий Корытов',
+    link: './images/Дмитрий Корытов.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Светлана Котляренко',
+    link: './images/Светлана Котляренко.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Кирилл Красиков',
+    link: './images/Кирилл Красиков.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Роман Лебедев',
+    link: './images/Роман Лебедев.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Анна Лебедева',
+    link: './images/Анна Лебедева.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Наталья Луан',
+    link: './images/Наталья Луан.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Андрей Макаров',
+    link: './images/Андрей Макаров.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Андрей Маноменов',
+    link: './images/Андрей Маноменов.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Елена Маноменова',
+    link: './images/Елена Маноменова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Артур Мкртчян',
+    link: './images/Артур Мкртчян.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Максим Могиль',
+    link: './images/Максим Могиль.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Игорь Муравьев',
+    link: './images/Игорь Муравьев.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Татьяна Мыльникова',
+    link: './images/Татьяна Мыльникова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Мария Нейланд',
+    link: './images/Мария Нейланд.png',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Ирина Некрасова',
+    link: './images/Ирина Некрасова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Анна Никитина',
+    link: './images/Некто.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Владимир Огородников',
+    link: './images/Владимир Огородников.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Ксения Оржесковская',
+    link: './images/Ксения Оржесковская.jpeg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Александр Павленко',
+    link: './images/Александр Павленко.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Елена Павлишина',
+    link: './images/Елена Павлишина.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Ольга Павлова',
+    link: './images/Ольга Павлова.jpeg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Татьяна Парфилова',
+    link: './images/Татьяна Парфилова.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Александра Писаренко',
+    link: './images/Александра Писаренко.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Денис Подгорный',
+    link: './images/Денис Подгорный.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Наталья Подгорная',
+    link: './images/Наталья Подгорная.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Александр Пономарёв',
+    link: './images/Александр Пономарёв.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Андрей Почивалов',
+    link: './images/Андрей Почивалов.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Алексей Рощектаев',
+    link: './images/Алексей Рощектаев.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Михо Саградян',
+    link: './images/михо.jpg',
   },
   {
-    name: '',
-    link: './images/.jpg',
+    name: 'Юля Тарасова',
+    link: './images/Юля Тарасова.jpg',
   },
+  {
+    name: 'Сергей Туркин',
+    link: './images/Сергей Туркин.jpg',
+  },
+  {
+    name: 'Галина Уварова',
+    link: './images/Галина Уварова.jpg',
+  },
+  {
+    name: 'Анна Ушакова',
+    link: './images/Анна Ушакова.jpeg',
+  },
+  {
+    name: 'Татьяна Федеченкова',
+    link: './images/Татьяна Федеченкова.jpg',
+  },
+  {
+    name: 'Евгения Федорова',
+    link: './images/Некто.jpg',
+  },
+  {
+    name: 'Александр Флеминг',
+    link: './images/Александр Флеминг.jpg',
+  },
+  {
+    name: 'Людмила Худолеева',
+    link: './images/Некто.jpg',
+  },
+  {
+    name: 'Аля Цой',
+    link: './images/Ала цой.jpg',
+  },
+  {
+    name: 'Александр цой',
+    link: './images/Александр цой.jpg',
+  }
 ]
 
-export {personListDJ, personListBY, personListMO};
+export {personListDJ, personListBY, personListMO, personListSP, listDJ, listBY, listMO, listSP};
