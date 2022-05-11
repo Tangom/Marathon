@@ -45,3 +45,9 @@ function openPopupImage(evt) {
 popupCloseImage.addEventListener('click', () => closePopup(popupPhoto))
 
 export {openPopupImage};
+
+// const photoList = Array.from(document.querySelectorAll('.person__image'));
+//
+// photoList.forEach((photo) => {
+//   photo.addEventListener('click', (evt) => openPopupImage(evt));
+// });
