@@ -867,7 +867,7 @@ const allData = [{
   {
     personList: personListSp,
     list:listSp,
-  },
+  }
 ]
 
 export {allData};
