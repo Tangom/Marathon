@@ -1,29 +1,3 @@
-const listDJ = document.querySelector('.list_dj');
-const listBy = document.querySelector('.list_by');
-const listGr = document.querySelector('.list_gr');
-const listFr = document.querySelector('.list_fr');
-const listUSA = document.querySelector('.list_usa');
-const listLaLi = document.querySelector('.list_laLi');
-const listVg = document.querySelector('.list_vg');
-const listVr = document.querySelector('.list_vr');
-const listEk = document.querySelector('.list_ek');
-const listKz = document.querySelector('.list_kz');
-const listKr = document.querySelector('.list_kr');
-const listMis = document.querySelector('.list_mis');
-const listMo = document.querySelector('.list_mo');
-const listMu = document.querySelector('.list_mu');
-const listNn = document.querySelector('.list_nn');
-const listOh = document.querySelector('.list_oh');
-const listPk = document.querySelector('.list_pk');
-const listPs = document.querySelector('.list_ps');
-const listRd = document.querySelector('.list_rd');
-const listRz = document.querySelector('.list_rz');
-const listSam = document.querySelector('.list_sam');
-const listSch = document.querySelector('.list_sch');
-const listTv = document.querySelector('.list_tv');
-const listChb = document.querySelector('.list_chb');
-const listChe = document.querySelector('.list_che');
-const listSp = document.querySelector('.list_sp');
 
 const personListDJ = [{
   name: 'Дмитрий Баклашов',
@@ -766,107 +740,107 @@ const personListSp = [{
 
 const allData = [{
   personList: personListDJ,
-  list:listDJ,
+  list: '.list_dj',
 },
   {
     personList: personListBy,
-    list:listBy,
+    list: '.list_by',
   },
   {
     personList: personListGr,
-    list:listGr,
+    list: '.list_gr',
   },
   {
     personList: personListFr,
-    list:listFr,
+    list: '.list_fr',
   },
   {
     personList: personListUSA,
-    list:listUSA,
+    list: '.list_usa',
   },
   {
-    personList:personListLaLi,
-    list:listLaLi,
+    personList: personListLaLi,
+    list: '.list_laLi',
   },
   {
-    personList:personListVg,
-    list:listVg,
+    personList: personListVg,
+    list: '.list_vg',
   },
   {
-    personList:personListVr,
-    list:listVr,
+    personList: personListVr,
+    list: '.list_vr',
   },
   {
-    personList:personListEk,
-    list:listEk,
+    personList: personListEk,
+    list: '.list_ek',
   },
   {
-    personList:personListKz,
-    list:listKz,
+    personList: personListKz,
+    list: '.list_kz',
   },
   {
-    personList:personListKr,
-    list:listKr,
+    personList: personListKr,
+    list: '.list_kr',
   },
   {
-    personList:personListMis,
-    list:listMis,
+    personList: personListMis,
+    list: '.list_mis',
   },
   {
-    personList:personListMo,
-    list:listMo,
+    personList: personListMo,
+    list: '.list_mo',
   },
   {
-    personList:personListMu,
-    list:listMu,
+    personList: personListMu,
+    list: '.list_mu',
   },
   {
-    personList:personListNn,
-    list:listNn,
+    personList: personListNn,
+    list: '.list_nn',
   },
   {
     personList: personListOh,
-    list:listOh,
+    list: '.list_oh',
   },
   {
-    personList:personListPk,
-    list:listPk,
+    personList: personListPk,
+    list: '.list_pk',
   },
   {
-    personList:personListPs,
-    list:listPs,
+    personList: personListPs,
+    list: '.list_ps',
   },
   {
-    personList:personListRd,
-    list:listRd,
+    personList: personListRd,
+    list: '.list_rd',
   },
   {
-    personList:personListRz,
-    list:listRz,
+    personList: personListRz,
+    list: '.list_rz',
   },
   {
-    personList:personListSam,
-    list:listSam,
+    personList: personListSam,
+    list: '.list_sam',
   },
   {
-    personList:personListSch,
-    list:listSch,
+    personList: personListSch,
+    list: '.list_sch',
   },
   {
-    personList:personListTv,
-    list:listTv,
+    personList: personListTv,
+    list: '.list_tv',
   },
   {
     personList: personListChb,
-    list:listChb,
+    list: '.list_chb',
   },
   {
-    personList:personListChe,
-    list:listChe,
+    personList: personListChe,
+    list: '.list_che',
   },
   {
     personList: personListSp,
-    list:listSp,
+    list: '.list_sp',
   }
 ]
 

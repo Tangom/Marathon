@@ -45,8 +45,10 @@ function createPersons(personList, list) {
     const person = item.town ? new extendedPerson(item) : new Person(item);
     // Создаём личность и возвращаем наружу
     const personElement = person.generatePerson();
+    const selectorList = document.querySelector(list);
     // Добавляем в DOM
-    list.append(personElement);
+    selectorList.append(personElement);
+
   });
 }
 
