@@ -52,4 +52,4 @@ function createPersons(personList, list) {
   });
 }
 
-export {createPersons};
+export {createPersons, Person};

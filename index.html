@@ -103,17 +103,17 @@
       </template>
     </div>
 
-    <div class="add">
+    <form class="add">
       <label class="add-label">
         Имя
-        <input class="add-input" type="text" size="40">
+        <input class="add-input add-input_name" maxlength="30" minlength="1" required type="text">
       </label>
       <label class="add-label">
         Фото
-        <input class="add-input" type="text" size="40">
+        <input class="add-input add-input_image" required type="url">
       </label>
-      <button class="add-button">Добавить</button>
-    </div>
+      <button class="add-button" type="submit">Добавить</button>
+    </form>
 
     <h3 class="town">Воронеж</h3>
 
