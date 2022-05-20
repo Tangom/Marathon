@@ -844,4 +844,4 @@ const allData = [{
   }
 ]
 
-export {allData, personListVg};
+export {allData};
