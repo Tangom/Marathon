@@ -1,36 +1,16 @@
-<<<<<<< HEAD
 import {Person} from './Person.js';
-// import {personListVg} from './data.js';
 
- const listVg = document.querySelector('.list_vg')
-=======
-// import {createPersons} from './Person.js';
-import {personListVg} from './data.js';
-
-// const listVg = document.querySelector('.list_vg')
->>>>>>> origin/main
-
+const listVg = document.querySelector('.list_vg');
 const add = document.querySelector('.add');
-// const name = add.querySelector('.add-input_name');
-// const inputImage = add.querySelector('.add-input_image');
-// const button = add.querySelector('.add-button');
+// import {createPersons} from './Person.js';
+// import {personListVg} from './data.js';
 
 
 class AddPhoto {
-<<<<<<< HEAD
   constructor({submitForm}) {
     // this._formSelector = formSelector;
     this._submitForm = submitForm;
   }
-
-  // _getTemplate() {
-  //   return document.querySelector(this._formSelector).content.cloneNode(true);
-  // }
-=======
-  constructor() {
-
-  }
->>>>>>> origin/main
 
   _getInputValues() {
     const inputValues = {};
@@ -42,76 +22,39 @@ class AddPhoto {
   }
 
   setEventListeners() {
-<<<<<<< HEAD
     add.addEventListener('submit', (evt) => {
       evt.preventDefault();
       this._submitForm(this._getInputValues())
       add.reset();
     })
   }
-
-  // generatePhoto() {
-  //   this._element = this._getTemplate();
-  //   this._setEventListeners();
-  //
-  //   return this._element;
-  // }
 }
-
 
 const photo = new AddPhoto({
   formSelector: '.template',
   submitForm: (data) => {
-    const person= new Person(data);
+    const person = new Person(data);
     const personElement = person.generatePerson();
     listVg.append(personElement);
-
   }
 });
-=======
-     add.addEventListener('submit', (evt) => {
-      evt.preventDefault();
-       personListVg.append( this._getInputValues())
-      // name: this._getInputValues().place,
-      // link: this._getInputValues().link
 
-       add.reset();
-    })
-  }
-
-}
-
-
-const photo = new AddPhoto();
-
->>>>>>> origin/main
 
 export {photo};
 
 
-<<<<<<< HEAD
- // postAddCard(item) {
- //      name: item.name,
- //      link: item.link
- //
- //
- //  submitForm: (item) => {
- //    popupCardForm.waitLoading(true);
- //    api.postAddCard({
- //      name: item.place,
- //      link: item.link
-=======
+// postAddCard(item) {
+//      name: item.name,
+//      link: item.link
+//
+//
+//  submitForm: (item) => {
+//    popupCardForm.waitLoading(true);
+//    api.postAddCard({
+//      name: item.place,
+//      link: item.link
 
 
-
-
-
-
-
-
-
-
->>>>>>> origin/main
 // class AddPhoto {
 //   constructor({ formSelector, handleFormSubmit }) {
 //     this._formSelector = formSelector;
