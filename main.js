@@ -8,8 +8,10 @@ function create(item) {
   });
 }
 
+photo.setEventListeners();
+
 create(allData);
 
-photo.setEventListeners();
+
 
 
