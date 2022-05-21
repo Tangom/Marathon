@@ -12,6 +12,6 @@ photo.setEventListeners();
 
 create(allData);
 
-
+photo.setEventListeners();
 
 

@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import {Person} from './Person.js';
 // import {personListVg} from './data.js';
 
  const listVg = document.querySelector('.list_vg')
+=======
+// import {createPersons} from './Person.js';
+import {personListVg} from './data.js';
+
+// const listVg = document.querySelector('.list_vg')
+>>>>>>> origin/main
 
 const add = document.querySelector('.add');
 // const name = add.querySelector('.add-input_name');
@@ -10,6 +17,7 @@ const add = document.querySelector('.add');
 
 
 class AddPhoto {
+<<<<<<< HEAD
   constructor({submitForm}) {
     // this._formSelector = formSelector;
     this._submitForm = submitForm;
@@ -18,6 +26,11 @@ class AddPhoto {
   // _getTemplate() {
   //   return document.querySelector(this._formSelector).content.cloneNode(true);
   // }
+=======
+  constructor() {
+
+  }
+>>>>>>> origin/main
 
   _getInputValues() {
     const inputValues = {};
@@ -29,6 +42,7 @@ class AddPhoto {
   }
 
   setEventListeners() {
+<<<<<<< HEAD
     add.addEventListener('submit', (evt) => {
       evt.preventDefault();
       this._submitForm(this._getInputValues())
@@ -54,10 +68,28 @@ const photo = new AddPhoto({
 
   }
 });
+=======
+     add.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+       personListVg.append( this._getInputValues())
+      // name: this._getInputValues().place,
+      // link: this._getInputValues().link
+
+       add.reset();
+    })
+  }
+
+}
+
+
+const photo = new AddPhoto();
+
+>>>>>>> origin/main
 
 export {photo};
 
 
+<<<<<<< HEAD
  // postAddCard(item) {
  //      name: item.name,
  //      link: item.link
@@ -68,6 +100,18 @@ export {photo};
  //    api.postAddCard({
  //      name: item.place,
  //      link: item.link
+=======
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/main
 // class AddPhoto {
 //   constructor({ formSelector, handleFormSubmit }) {
 //     this._formSelector = formSelector;
