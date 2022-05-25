@@ -126,7 +126,7 @@ const personListLaLi = [{
   },
 ]
 
-const personListVg = [{
+let personListVg = [{
   name: 'Наталья Шевченко',
   link: './images/Наташа Шевченко.jpg',
 }
@@ -384,7 +384,7 @@ const personListOh = [{
 
 const personListPk = [{
   name: 'Евгений Вялых',
-  link: './images/Евгений Вялых.jpeg',
+  link: './images/Евгений Вялых.jpg',
 },
   {
     name: 'Елена Дробышевская',
@@ -634,7 +634,7 @@ const personListSp = [{
   },
   {
     name: 'Мария Нейланд',
-    link: './images/Мария Нейланд.png',
+    link: './images/Мария Нейланд.jpg',
   },
   {
     name: 'Ирина Некрасова',
@@ -843,5 +843,7 @@ const allData = [{
     list: '.list_sp',
   }
 ]
+
+
 
 export {allData, personListVg};

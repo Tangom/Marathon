@@ -3,7 +3,7 @@ import {Person} from './Person.js';
 const listVg = document.querySelector('.list_vg');
 const add = document.querySelector('.add');
 // import {createPersons} from './Person.js';
-// import {personListVg} from './data.js';
+import {personListVg} from './data.js';
 
 
 class AddPhoto {
@@ -33,9 +33,10 @@ class AddPhoto {
 const photo = new AddPhoto({
   formSelector: '.template',
   submitForm: (data) => {
-    const person = new Person(data);
-    const personElement = person.generatePerson();
-    listVg.append(personElement);
+   personListVg.push(data);
+ const person = new Person(data);
+ const personElement = person.generatePerson();
+ listVg.append(personElement);
   }
 });
 
