@@ -1,7 +1,10 @@
 const path = require('path');
 // указали в какой файл будет собираться весь js и дали ему имя
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = { // module.exports — это синтаксис экспорта в Node.js
-  entry: { main: './src/index.js' },
+  entry: { main: './main.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
@@ -15,5 +18,23 @@ module.exports = { // module.exports — это синтаксис экспор�
 
     open: true // сайт будет открываться сам при запуске npm run dev
   },
-}
+  module: {
+    rules: [ // rules — это массив правил
+      // добавим в него объект правил для бабеля
+      {
+        // регулярное выражение, которое ищет все js файлы
+        test: /\.js$/,
+        // при обработке этих файлов нужно использовать babel-loader
+        use: 'babel-loader',
+        // исключает папку node_modules, файлы в ней обрабатывать не нужно
+        exclude: /node_modules/
+      }]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),// путь к файлу index.html
+    new CleanWebpackPlugin(),
+  ]
+};
 
