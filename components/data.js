@@ -1,180 +1,236 @@
 
+import baklashov from '../images/Дмитрий Баклашов.jpg';
+import vinograd from '../images/Екатерина Виноградова.jpg';
+import shatk  from '../images/Алина Шатковская.jpg';
+import tuero from '../images/Daniel Tuero.jpg';
+import brus from '../images/Hernán Brusa.jpg';
+import shevch from '../images/Виктор Шевченко.jpg';
+import kostr from '../images/Ира Кострома.jpg';
+
+import averch from '../images/Виталий Аверченко.jpg' ;
+import averche from '../images/Наталья Аверченко.jpg';
+import voito  from '../images/Ольга Войтович.JPG';
+import ivanova from '../images/Марина Иванова.jpg';
+import yasoveeva  from '../images/Екатерина Ясовеева.jpg';
+import yastreb from '../images/Ирина Ястребкова.jpg';
+
+import cornelia from '../images/Cornelia H.jpg';
+import sokolov from '../images/Алексей соколовский.jpg';
+
+
+import kiner  from '../images/Михаил Кинер.jpg';
+import lazu  from '../images/Надежда Лазутина.jpeg';
+import cfasman from '../images/Елена Цфасман.jpg';
+
+import bork from '../images/Аркадий Борковский.jpg';
+import cuht from '../images/Валерий Кухтиев.jpg';
+import roberts from '../images/Jamie Roberts.jpg';
+
+import dovb from '../images/Карина Довбуш.jpg';
+import zinov from '../images/Марина Зинович.jpg';
+
+import shevche from '../images/Наташа Шевченко.jpg';
+
+import anikeev from '../images/Евгений Аникеев.jpg';
+import baklashova from '../images/Светлана Баклашова.jpg';
+import clucha from '../images/Вероника Ключанская.jpg';
+
+
+import bazenova from '../images/Елена Баженова.jpg' ;
+import egorov from '../images/Илья Егоров.jpg';
+
+import kruchkova from'../images/Ирина Крючкова.jpg';
+
+
+import goz from '../images/Илья Гоз.jpg' ;
+import danilovich from './images/Галина Данилович.jpg' ;
+
+import  from './images/Юрий Дюков.jpg';
+
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+
+
+
 const personListDJ = [{
   name: 'Дмитрий Баклашов',
-  link: './images/Дмитрий Баклашов.jpg',
+  link: baklashov,
   town: 'Воронеж'
 },
   {
     name: 'Екатерина Виноградова',
-    link: './images/Екатерина Виноградова.jpg',
+    link: vinograd,
     town: 'Москва'
   },
   {
     name: 'Алина Шатковская',
-    link: './images/Алина Шатковская.jpg',
+    link: shatk,
     town: 'Москва'
   },
   {
     name: 'Daniel Tuero',
-    link: './images/Daniel Tuero.jpg',
+    link: tuero,
     town: 'Buenos Aires/Москва'
   },
   {
     name: 'Hernán Brus',
-    link: './images/Hernán Brusa.jpg',
+    link: brus,
     town: 'Buenos-Aires/Санкт-Петербург'
   },
   {
     name: 'Виктор Шевченко',
-    link: './images/Виктор Шевченко.jpg',
+    link: shevch,
     town: 'Вологда'
   },
   {
     name: 'Ирина Кострома',
-    link: './images/Ира Кострома.jpg',
+    link: kostr,
     town: 'Псков'
   }
 ]
 
 const personListBy = [{
   name: 'Виталий Аверченко',
-  link: './images/Виталий Аверченко.jpg',
+  link: averch,
   town: 'Минск'
 },
   {
     name: 'Наталья Аверченко',
-    link: './images/Наталья Аверченко.jpg',
+    link: averche,
     town: 'Минск'
   },
   {
     name: 'Ольга Войтович',
-    link: './images/Ольга Войтович.JPG',
+    link: voito,
     town: 'Минск'
   },
   {
     name: 'Марина Иванова',
-    link: './images/Марина Иванова.jpg',
+    link: ivanova,
     town: 'Минск'
   },
   {
     name: 'Екатерина Ясовеева',
-    link: './images/Екатерина Ясовеева.jpg',
+    link: yasoveeva,
     town: 'Минск'
   },
   {
     name: 'Ирина Ястребкова',
-    link: './images/Ирина Ястребкова.jpg',
+    link: yastreb,
     town: 'Минск'
   }
 ]
 
 const personListGr = [{
   name: 'Cornelia Heinrichs',
-  link: './images/Cornelia H.jpg',
+  link: cornelia,
   town: 'Dortmund'
 },
   {
     name: 'Алексей Соколовский',
-    link: './images/Алексей соколовский.jpg',
+    link: sokolov,
     town: 'Dusseldorf'
   }
 ]
 
 const personListFr = [{
   name: 'Михаил Кинер',
-  link: './images/Михаил Кинер.jpg',
+  link: kiner,
   town: 'Eaubonne'
 },
   {
     name: 'Надежда Лазутина Зверева',
-    link: './images/Надежда Лазутина.jpeg',
+    link: lazu,
     town: 'Paris'
   },
   {
     name: 'Елена Цфасман',
-    link: './images/Елена Цфасман.jpg',
+    link: cfasman,
     town: 'Paris'
   }
 ]
 
 const personListUSA = [{
   name: 'Аркадий Борковский',
-  link: './images/Аркадий Борковский.jpg',
+  link: bork,
   town: 'Palo Alto'
 },
   {
     name: 'Валерий Кухтиев',
-    link: './images/Валерий Кухтиев.jpg',
+    link: cuht,
     town: 'Orlando'
   },
   {
     name: 'Jamie Roberts',
-    link: './images/Jamie Roberts.jpg',
+    link: roberts,
     town: 'Denver'
   }
 ]
 
 const personListLaLi = [{
   name: 'Карина Довбуш',
-  link: './images/Карина Довбуш.jpg',
+  link: dovb,
   town: 'Рига'
 },
   {
     name: 'Марина Зинович',
-    link: './images/Марина Зинович.jpg',
+    link: zinov,
     town: 'Вильнюс'
   },
 ]
 
+
 let personListVg = [{
   name: 'Наталья Шевченко',
-  link: './images/Наташа Шевченко.jpg',
+  link: shevche,
 }
 ]
 
 const personListVr = [{
   name: 'Евгений Аникеев',
-  link: './images/Евгений Аникеев.jpg',
+  link: anikeev ,
 },
   {
     name: 'Светлана Баклашова',
-    link: './images/Светлана Баклашова.jpg',
+    link: baklashova,
   },
   {
     name: 'Вероника Ключанская',
-    link: './images/Вероника Ключанская.jpg',
+    link: clucha,
   }
 ]
 
 const personListEk = [{
   name: 'Елена Баженова',
-  link: './images/Елена Баженова.jpg',
+  link: bazenova,
 },
   {
     name: 'Илья Егоров',
-    link: './images/Илья Егоров.jpg',
+    link: egorov ,
   }
 ]
 
 const personListKz = [{
   name: 'Ирина Крючкова',
-  link: './images/Ирина Крючкова.jpg',
+  link: kruchkova ,
 }
 ]
 
 const personListKr = [{
   name: 'Илья Гоз',
-  link: './images/Илья Гоз.jpg',
+  link: goz,
 },
   {
     name: 'Галина Данилович',
-    link: './images/Галина Данилович.jpg',
+    link: danilovich,
   }
 ]
 
 const personListMis = [{
   name: 'Юрий Дюков',
-  link: './images/Юрий Дюков.jpg',
+  link: ,
 }
 ]
 
