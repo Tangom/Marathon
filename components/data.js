@@ -45,8 +45,130 @@ import kruchkova from'../images/Ирина Крючкова.jpg';
 import goz from '../images/Илья Гоз.jpg' ;
 import danilovich from './images/Галина Данилович.jpg' ;
 
-import  from './images/Юрий Дюков.jpg';
+import dukov  from './images/Юрий Дюков.jpg';
 
+import adrianova  from './images/Мария Адрианова.jpg' ;
+import antonov  from './images/Игорь Антонов.png';
+import bogov from './images/Петр Богов.jpg' ;
+import boyarova from './images/Татьяна Боярова.jpg' ;
+import bystrov from './images/Сергей Быстров.jpg';
+import bystrova from './images/Анна Быстрова.jpg';
+import vybornov from'./images/Александр Выборнов.jpg';
+import giza from './images/Лина Гиза.jpg';
+import glushkova from './images/Галина Глушко.jpg';
+import glusko from './images/Виктор Глушко.jpg';
+import dagil from './images/Юлия Дагиль.jpg';
+import chaparal  from './images/Юлия Датура Чапараль.jpg';
+import dulcev from './images/Алексей Дульцев.png';
+import zagreb from './images/Александр Загребайлов.jpg';
+import zagrebova from './images/Ирина Загребайлова.jpg';
+import argona from './images/Елена Аргона Иванова.jpg';
+import kozurman from './images/Евгений Козюрман.jpg';
+import kravcev from './images/Андрей Кравцев.jpg';
+import kravcova from './images/Юлия Кравцова 2.jpg';
+import krylova from './images/Ирина Крылова.jpeg';
+import lutchenkov from './images/Сергей Лутченков.jpg';
+import maksuta from './images/Вячеслав Максюта.jpg';
+import nekto from './images/Некто.jpg';
+import matrosova  from './images/Александра Матросова.jpg';
+import molokova from './images/Наталья Молокова.jpg';
+import nice from './images/Oleg Nice.jpg';
+import nigmatulin from './images/Ринат Нигматуллин.jpg';
+import nikulin  from './images/Антон Никулин.jpeg';
+import polunkova from './images/Наталья Полынкова.jpg';
+import pomyna from './images/Дарья Помян.jpg';
+import pomyn from './images/Игорь Помян.jpg';
+import redin from './images/Дмитрий Редин.jpg';
+import rumynceva from './images/Марина Румянцева.jpg';
+import sergeev from './images/Александр Сергеев.jpg';
+import sokolova from './images/Ирина Соколова.jpeg';
+import solovieva from './images/Анна Соловьева.jpg';
+import sytova from './images/Ирина Сытова.jpg';
+import tupov  from './images/Алексей Тупов.jpg';
+import eshenko from './images/Сергей Ещенко.jpg';
+import logunova from './images/Марина Логунова.jpg';
+import kotelnikova from './images/Алла Котельникова.jpg';
+import kuznecov  from './images/Олег Кузнецов.jpg';
+import kuznecova from './images/Галина Кузнецова.jpg';
+import kulakova from './images/Варвара Кулакова.jpg';
+import malutkina from './images/Ирина Малюткина.jpg';
+import poltanov from './images/Анатолий Полтанов.jpg';
+import shilova from './images/Надежда Шилова.jpg';
+
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
+import  from ;
 import  from ;
 import  from ;
 import  from ;
@@ -230,205 +352,205 @@ const personListKr = [{
 
 const personListMis = [{
   name: 'Юрий Дюков',
-  link: ,
+  link:  dukov,
 }
 ]
 
 const personListMo = [{
   name: 'Мария Андрианова',
-  link: './images/Мария Адрианова.jpg',
+  link: adrianova ,
 },
   {
     name: 'Игорь Антонов',
-    link: './images/Игорь Антонов.png',
+    link: antonov ,
   },
   {
     name: 'Петр Богов',
-    link: './images/Петр Богов.jpg',
+    link: bogov,
   },
   {
     name: 'Татьяна Боярова',
-    link: './images/Татьяна Боярова.jpg',
+    link: boyarova,
   },
   {
     name: 'Сергей Быстров',
-    link: './images/Сергей Быстров.jpg',
+    link: bystrov ,
   },
   {
     name: 'Анна Быстрова',
-    link: './images/Анна Быстрова.jpg',
+    link: bystrova ,
   },
   {
     name: 'Александр Выборнов',
-    link: './images/Александр Выборнов.jpg',
+    link: vybornov,
   },
   {
     name: 'Лина Гиза',
-    link: './images/Лина Гиза.jpg',
+    link: giza ,
   },
   {
     name: 'Галина Глушко',
-    link: './images/Галина Глушко.jpg',
+    link: glushkova ,
   },
   {
     name: 'Виктор Глушко',
-    link: './images/Виктор Глушко.jpg',
+    link: glusko,
   },
   {
     name: 'Юлия Дагиль',
-    link: './images/Юлия Дагиль.jpg',
+    link: dagil,
   },
   {
     name: 'Юлия Датура-Чапораль',
-    link: './images/Юлия Датура Чапараль.jpg',
+    link: chaparal,
   },
   {
     name: 'Алексей Дульцев',
-    link: './images/Алексей Дульцев.png',
+    link: dulcev ,
   },
   {
     name: 'Александр Загребайлов',
-    link: './images/Александр Загребайлов.jpg',
+    link: zagreb,
   },
   {
     name: 'Ирина Загребайлова',
-    link: './images/Ирина Загребайлова.jpg',
+    link: zagrebova,
   },
   {
     name: 'Елена Аргона Иванова',
-    link: './images/Елена Аргона Иванова.jpg',
+    link: argona ,
   },
   {
     name: 'Евгений Козюрман',
-    link: './images/Евгений Козюрман.jpg',
+    link: kozurman,
   },
   {
     name: 'Андрей Кравцев',
-    link: './images/Андрей Кравцев.jpg',
+    link: kravcev ,
   },
   {
     name: 'Юлия Кравцова',
-    link: './images/Юлия Кравцова 2.jpg',
+    link: kravcova ,
   },
   {
     name: 'Ирина Крылова',
-    link: './images/Ирина Крылова.jpeg',
+    link: krylova,
   },
   {
     name: 'Сергей Лутченков',
-    link: './images/Сергей Лутченков.jpg',
+    link: lutchenkov,
   },
   {
     name: 'Вячеслав Максюта',
-    link: './images/Вячеслав Максюта.jpg',
+    link: maksuta,
   },
   {
     name: 'Марина Матросова',
-    link: './images/Некто.jpg',
+    link: nekto,
   },
   {
     name: 'Александра Матросова',
-    link: './images/Александра Матросова.jpg',
+    link: matrosova,
   },
   {
     name: 'Наталья Молокова',
-    link: './images/Наталья Молокова.jpg',
+    link: molokova,
   },
   {
     name: 'Oleg Nice',
-    link: './images/Oleg Nice.jpg',
+    link: nice,
   },
   {
     name: 'Ринат Нигматуллин',
-    link: './images/Ринат Нигматуллин.jpg',
+    link: nigmatulin,
   },
   {
     name: 'Антон Никулин',
-    link: './images/Антон Никулин.jpeg',
+    link: nikulin,
   },
   {
     name: 'Наталья Полынкова',
-    link: './images/Наталья Полынкова.jpg',
+    link: polunkova,
   },
   {
     name: 'Дарья Помян',
-    link: './images/Дарья Помян.jpg',
+    link: pomyna,
   },
   {
     name: 'Игорь Помян',
-    link: './images/Игорь Помян.jpg',
+    link: pomyn,
   },
   {
     name: 'Дмитрий Редин',
-    link: './images/Дмитрий Редин.jpg',
+    link: redin,
   },
   {
     name: 'Марина Румянцева',
-    link: './images/Марина Румянцева.jpg',
+    link: rumynceva,
   },
   {
     name: 'Александр Сергеев',
-    link: './images/Александр Сергеев.jpg',
+    link: sergeev,
   },
   {
     name: 'Ирина Соколова',
-    link: './images/Ирина Соколова.jpeg',
+    link: sokolova,
   },
   {
     name: 'Анна Соловьева',
-    link: './images/Анна Соловьева.jpg',
+    link: solovieva,
   },
   {
     name: 'Ирина Сытова',
-    link: './images/Ирина Сытова.jpg',
+    link: sytova,
   },
   {
     name: 'Алексей Тупов',
-    link: './images/Алексей Тупов.jpg',
+    link: tupov,
   }
 ]
 
 const personListMu = [{
   name: 'Сергей Ещенко',
-  link: './images/Сергей Ещенко.jpg',
+  link: eshenko,
 },
   {
     name: 'Марина Логунова',
-    link: './images/Марина Логунова.jpg',
+    link: logunova,
   }
 ]
 
 const personListNn = [{
   name: 'Алла Котельникова',
-  link: './images/Алла Котельникова.jpg',
+  link: kotelnikova,
 },
   {
     name: 'Олег Кузнецов',
-    link: './images/Олег Кузнецов.jpg',
+    link: kuznecov,
   },
   {
     name: 'Галина Кузнецова',
-    link: './images/Галина Кузнецова.jpg',
+    link: kuznecova,
   },
   {
     name: 'Варвара Кулакова',
-    link: './images/Варвара Кулакова.jpg',
+    link: kulakova,
   },
   {
     name: 'Ирина Малюткина(Афина)',
-    link: './images/Ирина Малюткина.jpg',
+    link: malutkina,
   },
   {
     name: 'Елена Никифорова',
-    link: './images/Некто.jpg',
+    link: nekto,
   },
   {
     name: 'Анатолий Полтанов',
-    link: './images/Анатолий Полтанов.jpg',
+    link: poltanov,
   },
   {
     name: 'Надежда Шилова',
-    link: './images/Надежда Шилова.jpg',
+    link: shilova,
   }
 ]
 
