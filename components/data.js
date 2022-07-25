@@ -171,36 +171,22 @@ import pavlenko from '../images/Александр Павленко.jpg';
 import pavlishina from '../images/Елена Павлишина.jpg';
 import pavlova from '../images/Ольга Павлова.jpeg';
 import parfilova from '../images/Татьяна Парфилова.jpg';
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
-import  from ;
+import pisarenko  from '../images/Александра Писаренко.jpg' ;
+import podgornyi from '../images/Денис Подгорный.jpg';
+import podgornaya from '../images/Наталья Подгорная.jpg';
+import ponomarev from '../images/Александр Пономарёв.jpg';
+import pochivalov from '../images/Андрей Почивалов.jpg';
+import rochektaev from '../images/Алексей Рощектаев.jpg';
+import miho from '../images/михо.jpg';
+import tarasova from '../images/Юля Тарасова.jpg';
+import turkin from '../images/Сергей Туркин.jpg';
+import uvarova from '../images/Галина Уварова.jpg';
+import ushakova from '../images/Анна Ушакова.jpeg';
+import fedechenkova from '../images/Татьяна Федеченкова.jpg';
+import fleming  from '../images/Александр Флеминг.jpg';
+import cjoia from '../images/Ала цой.jpg';
+import cjoi from '../images/Александр цой.jpg';
+
 
 
 const personListDJ = [{
@@ -875,71 +861,71 @@ const personListSp = [{
   },
   {
     name: 'Александра Писаренко',
-    link: './images/Александра Писаренко.jpg',
+    link: pisarenko,
   },
   {
     name: 'Денис Подгорный',
-    link: './images/Денис Подгорный.jpg',
+    link: podgornyi,
   },
   {
     name: 'Наталья Подгорная',
-    link: './images/Наталья Подгорная.jpg',
+    link: podgornaya,
   },
   {
     name: 'Александр Пономарёв',
-    link: './images/Александр Пономарёв.jpg',
+    link: ponomarev,
   },
   {
     name: 'Андрей Почивалов',
-    link: './images/Андрей Почивалов.jpg',
+    link: pochivalov,
   },
   {
     name: 'Алексей Рощектаев',
-    link: './images/Алексей Рощектаев.jpg',
+    link: rochektaev,
   },
   {
     name: 'Михо Саградян',
-    link: './images/михо.jpg',
+    link: miho,
   },
   {
     name: 'Юля Тарасова',
-    link: './images/Юля Тарасова.jpg',
+    link: tarasova,
   },
   {
     name: 'Сергей Туркин',
-    link: './images/Сергей Туркин.jpg',
+    link: turkin,
   },
   {
     name: 'Галина Уварова',
-    link: './images/Галина Уварова.jpg',
+    link: uvarova,
   },
   {
     name: 'Анна Ушакова',
-    link: './images/Анна Ушакова.jpeg',
+    link: ushakova,
   },
   {
     name: 'Татьяна Федеченкова',
-    link: './images/Татьяна Федеченкова.jpg',
+    link: fedechenkova,
   },
   {
     name: 'Евгения Федорова',
-    link: './images/Некто.jpg',
+    link: nekto,
   },
   {
     name: 'Александр Флеминг',
-    link: './images/Александр Флеминг.jpg',
+    link: fleming,
   },
   {
     name: 'Людмила Худолеева',
-    link: './images/Некто.jpg',
+    link: nekto,
   },
   {
     name: 'Аля Цой',
-    link: './images/Ала цой.jpg',
+    link: cjoia ,
   },
   {
     name: 'Александр цой',
-    link: './images/Александр цой.jpg',
+    link: cjoi,
   }
 ]
 
