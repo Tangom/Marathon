@@ -9,7 +9,7 @@ import kostr from '../images/Ира Кострома.jpg';
 
 import averch from '../images/Виталий Аверченко.jpg' ;
 import averche from '../images/Наталья Аверченко.jpg';
-import voito  from '../images/Ольга Войтович.JPG';
+import voito  from '../images/Ольга Войтович.jpg';
 import ivanova from '../images/Марина Иванова.jpg';
 import yasoveeva  from '../images/Екатерина Ясовеева.jpg';
 import yastreb from '../images/Ирина Ястребкова.jpg';
@@ -19,7 +19,7 @@ import sokolov from '../images/Алексей соколовский.jpg';
 
 
 import kiner  from '../images/Михаил Кинер.jpg';
-import lazu  from '../images/Надежда Лазутина.jpeg';
+import lazu  from '../images/Надежда Лазутина.jpg';
 import cfasman from '../images/Елена Цфасман.jpg';
 
 import bork from '../images/Аркадий Борковский.jpg';
@@ -66,7 +66,7 @@ import argona from '../images/Елена Аргона Иванова.jpg';
 import kozurman from '../images/Евгений Козюрман.jpg';
 import kravcev from '../images/Андрей Кравцев.jpg';
 import kravcova from '../images/Юлия Кравцова 2.jpg';
-import krylova from '../images/Ирина Крылова.jpeg';
+import krylova from '../images/Ирина Крылова.jpg';
 import lutchenkov from '../images/Сергей Лутченков.jpg';
 import maksuta from '../images/Вячеслав Максюта.jpg';
 import nekto from '../images/Некто.jpg';
@@ -74,14 +74,14 @@ import matrosova  from '../images/Александра Матросова.jpg';
 import molokova from '../images/Наталья Молокова.jpg';
 import nice from '../images/Oleg Nice.jpg';
 import nigmatulin from '../images/Ринат Нигматуллин.jpg';
-import nikulin  from '../images/Антон Никулин.jpeg';
+import nikulin  from '../images/Антон Никулин.jpg';
 import polunkova from '../images/Наталья Полынкова.jpg';
 import pomyna from '../images/Дарья Помян.jpg';
 import pomyn from '../images/Игорь Помян.jpg';
 import redin from '../images/Дмитрий Редин.jpg';
 import rumynceva from '../images/Марина Румянцева.jpg';
 import sergeev from '../images/Александр Сергеев.jpg';
-import sokolova from '../images/Ирина Соколова.jpeg';
+import sokolova from '../images/Ирина Соколова.jpg';
 import solovieva from '../images/Анна Соловьева.jpg';
 import sytova from '../images/Ирина Сытова.jpg';
 import tupov  from '../images/Алексей Тупов.jpg';
@@ -98,10 +98,10 @@ import shilova from '../images/Надежда Шилова.jpg';
 import kosyn from '../images/Григорий Косьян.jpg';
 
 import vyluh from '../images/Евгений Вялых.jpg';
-import drobyshevskaya from '../images/Елена Дробышевская.jpeg';
+import drobyshevskaya from '../images/Елена Дробышевская.jpg';
 
 import durynichev  from '../images/Константин Дурыничев.jpg';
-import jaricov from '../images/Геннадий Жариков.JPG';
+import jaricov from '../images/Геннадий Жариков.jpg';
 import kornouhov  from '../images/Яков Корноухов.jpg';
 import lozovskaya  from '../images/Светлана Лозовская.jpg';
 import petrova from '../images/Екатерина Петрова.jpg';
@@ -116,7 +116,7 @@ import konnih from '../images/Татьяна Конных.jpg' ;
 import muravev from '../images/Татьяна Муравьёва.jpg';
 import feoctistova from '../images/Татьяна Феоктистова.jpg';
 
-import julkova  from '../images/Дарья Жулькова.jpeg';
+import julkova  from '../images/Дарья Жулькова.jpg';
 
 import yakushev from '../images/Иван Якушев.jpg';
 
@@ -166,10 +166,10 @@ import milnikova from '../images/Татьяна Мыльникова.jpg';
 import neiland from '../images/Мария Нейланд.jpg';
 import nekrasova from '../images/Ирина Некрасова.jpg';
 import ogorodnikov from '../images/Владимир Огородников.jpg' ;
-import orjeskovskaya  from '../images/Ксения Оржесковская.jpeg' ;
+import orjeskovskaya  from '../images/Ксения Оржесковская.jpg' ;
 import pavlenko from '../images/Александр Павленко.jpg';
 import pavlishina from '../images/Елена Павлишина.jpg';
-import pavlova from '../images/Ольга Павлова.jpeg';
+import pavlova from '../images/Ольга Павлова.jpg';
 import parfilova from '../images/Татьяна Парфилова.jpg';
 import pisarenko  from '../images/Александра Писаренко.jpg' ;
 import podgornyi from '../images/Денис Подгорный.jpg';
@@ -181,7 +181,7 @@ import miho from '../images/михо.jpg';
 import tarasova from '../images/Юля Тарасова.jpg';
 import turkin from '../images/Сергей Туркин.jpg';
 import uvarova from '../images/Галина Уварова.jpg';
-import ushakova from '../images/Анна Ушакова.jpeg';
+import ushakova from '../images/Анна Ушакова.jpg';
 import fedechenkova from '../images/Татьяна Федеченкова.jpg';
 import fleming  from '../images/Александр Флеминг.jpg';
 import cjoia from '../images/Ала цой.jpg';
